@@ -46,19 +46,35 @@ header {
 }
 
 #home {
-  height: 100vh;
+  height: 90vh;
   display: grid;
   grid-template-columns: 10vw 2fr 1fr 10vw;
-  grid-template-rows: 1fr 1fr;
   align-items: center;
   h1 {
     grid-column: 2/3;
+    margin-bottom: 25vh;
+    font-size: 2.3em;
   }
+  .yang {
+    height: 30vh;
+    margin-bottom: 20vh;
+    margin-right: -10vh;
+  }
+}
+#home2 {
+  position: relative;
+  height: 100vh;
+  background: #000000;
   .dark-bottom {
-    grid-column: 1/4;
-    grid-row: 2/3;
-    width: 100%;
-    margin-left: -20vw;
-    height: 20vh;
+    position: absolute;
+    transform: translate(-20vh, -35vh) skew(48deg, -5deg);
+    width: 115vw;
+    z-index: -1;
   }
+}
+
+.yin {
+  height: 30vh;
+  margin-top: 30vh;
+  margin-left: 10vw;
 }

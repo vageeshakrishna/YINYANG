@@ -75,13 +75,11 @@ header nav .nav-links {
 }
 
 #home {
-  height: 100vh;
+  height: 90vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 10vw 2fr 1fr 10vw;
       grid-template-columns: 10vw 2fr 1fr 10vw;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -91,17 +89,33 @@ header nav .nav-links {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  margin-bottom: 25vh;
+  font-size: 2.3em;
 }
 
-#home .dark-bottom {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  width: 100%;
-  margin-left: -20vw;
-  height: 20vh;
+#home .yang {
+  height: 30vh;
+  margin-bottom: 20vh;
+  margin-right: -10vh;
+}
+
+#home2 {
+  position: relative;
+  height: 100vh;
+  background: #000000;
+}
+
+#home2 .dark-bottom {
+  position: absolute;
+  -webkit-transform: translate(-20vh, -35vh) skew(48deg, -5deg);
+          transform: translate(-20vh, -35vh) skew(48deg, -5deg);
+  width: 115vw;
+  z-index: -1;
+}
+
+.yin {
+  height: 30vh;
+  margin-top: 30vh;
+  margin-left: 10vw;
 }
 /*# sourceMappingURL=styles.css.map */
