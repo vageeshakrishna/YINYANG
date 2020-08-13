@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Shojumaru&display=swap");
+
+@mixin flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Shojumaru", cursive;
+  position: relative;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+header {
+  height: 10vh;
+  nav {
+    font-size: 0.9rem;
+    height: inherit;
+    padding: 0 10vw 0 10vw;
+    @include flex();
+    .logo {
+      @include flex();
+      justify-content: left;
+      flex: 2;
+      .logo-img {
+        height: 8vh;
+        padding-right: 1vw;
+      }
+    }
+    .nav-links {
+      @include flex();
+      flex: 1;
+    }
+  }
+}
+
+#home {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10vw 2fr 1fr 10vw;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  h1 {
+    grid-column: 2/3;
+  }
+  .dark-bottom {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    width: 100%;
+    margin-left: -20vw;
+    height: 20vh;
+  }
+}
