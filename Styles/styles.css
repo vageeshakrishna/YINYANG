@@ -105,17 +105,25 @@ header nav .nav-links {
   background: #000000;
 }
 
-#home2 .dark-bottom {
+#home2 .yin {
+  height: 30vh;
+  margin-top: 30vh;
+  margin-left: 10vw;
+}
+
+#home2 h1 {
+  position: absolute;
+  color: #fff;
+  padding-left: 50vw;
+  margin-top: -20vh;
+  font-size: 2.3em;
+}
+
+.white-bottom {
   position: absolute;
   -webkit-transform: translate(-20vh, -35vh) skew(48deg, -5deg);
           transform: translate(-20vh, -35vh) skew(48deg, -5deg);
   width: 115vw;
   z-index: -1;
-}
-
-.yin {
-  height: 30vh;
-  margin-top: 30vh;
-  margin-left: 10vw;
 }
 /*# sourceMappingURL=styles.css.map */

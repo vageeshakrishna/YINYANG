@@ -65,16 +65,23 @@ header {
   position: relative;
   height: 100vh;
   background: #000000;
-  .dark-bottom {
+  .yin {
+    height: 30vh;
+    margin-top: 30vh;
+    margin-left: 10vw;
+  }
+  h1 {
     position: absolute;
-    transform: translate(-20vh, -35vh) skew(48deg, -5deg);
-    width: 115vw;
-    z-index: -1;
+    color: #fff;
+    padding-left: 50vw;
+    margin-top: -20vh;
+    font-size: 2.3em;
   }
 }
 
-.yin {
-  height: 30vh;
-  margin-top: 30vh;
-  margin-left: 10vw;
+.white-bottom {
+  position: absolute;
+  transform: translate(-20vh, -35vh) skew(48deg, -5deg);
+  width: 115vw;
+  z-index: -1;
 }
