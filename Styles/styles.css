@@ -98,11 +98,18 @@ header nav .nav-links {
   height: 30vh;
   margin-bottom: 20vh;
   margin-right: -10vh;
+  -webkit-transition: 2s 0.5s ease-in-out;
+  transition: 2s 0.5s ease-in-out;
+}
+
+#home .yang:hover {
+  -webkit-transform: rotate(520deg);
+          transform: rotate(520deg);
 }
 
 #home2 {
   position: relative;
-  height: 110vh;
+  height: 20vh;
   background-color: #000;
 }
 
@@ -124,6 +131,13 @@ header nav .nav-links {
   height: 30vh;
   margin-top: 30vh;
   margin-left: 10vw;
+  -webkit-transition: 2s 0.5s ease;
+  transition: 2s 0.5s ease;
+}
+
+#home3 .yin:hover {
+  -webkit-transform: rotate(520deg);
+          transform: rotate(520deg);
 }
 
 #home3 h1 {
@@ -140,5 +154,38 @@ header nav .nav-links {
   width: 98.9vw;
   bottom: 0;
   left: 0;
+}
+
+#home3 .cta-btn {
+  position: relative;
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 3vh 10vh;
+  margin: 0 0 5vh 35vw;
+  -webkit-transition: 0s 0.2s all ease;
+  transition: 0s 0.2s all ease;
+}
+
+#home3 .cta-btn::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background-color: #000;
+  top: 0;
+  right: 0vw;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+#home3 .cta-btn:hover::after {
+  z-index: -1;
+  width: 100%;
+  opacity: 1;
+}
+
+#home3 .cta-btn:hover {
+  z-index: 1;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
