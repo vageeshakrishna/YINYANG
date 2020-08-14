@@ -24,6 +24,7 @@ a {
 }
 header {
   height: 10vh;
+  background-color: #fff;
   nav {
     font-size: 0.9rem;
     height: inherit;
@@ -46,7 +47,7 @@ header {
 }
 
 #home {
-  height: 90vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: 10vw 2fr 1fr 10vw;
   align-items: center;
@@ -61,7 +62,19 @@ header {
     margin-right: -10vh;
   }
 }
+
 #home2 {
+  position: relative;
+  height: 110vh;
+  background-color: #000;
+  .dark {
+    position: absolute;
+    transform: translateY(-30vh);
+    height: 45vh;
+    width: 98.9vw;
+  }
+}
+#home3 {
   position: relative;
   height: 100vh;
   background: #000000;
@@ -74,14 +87,14 @@ header {
     position: absolute;
     color: #fff;
     padding-left: 50vw;
-    margin-top: -20vh;
+    margin-top: -35vh;
     font-size: 2.3em;
   }
-}
-
-.white-bottom {
-  position: absolute;
-  transform: translate(-20vh, -35vh) skew(48deg, -5deg);
-  width: 115vw;
-  z-index: -1;
+  .light {
+    position: absolute;
+    height: 25vh;
+    width: 98.9vw;
+    bottom: 0;
+    left: 0;
+  }
 }

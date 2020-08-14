@@ -22,6 +22,7 @@ a {
 
 header {
   height: 10vh;
+  background-color: #fff;
 }
 
 header nav {
@@ -75,7 +76,7 @@ header nav .nav-links {
 }
 
 #home {
-  height: 90vh;
+  height: 80vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 10vw 2fr 1fr 10vw;
@@ -101,29 +102,43 @@ header nav .nav-links {
 
 #home2 {
   position: relative;
+  height: 110vh;
+  background-color: #000;
+}
+
+#home2 .dark {
+  position: absolute;
+  -webkit-transform: translateY(-30vh);
+          transform: translateY(-30vh);
+  height: 45vh;
+  width: 98.9vw;
+}
+
+#home3 {
+  position: relative;
   height: 100vh;
   background: #000000;
 }
 
-#home2 .yin {
+#home3 .yin {
   height: 30vh;
   margin-top: 30vh;
   margin-left: 10vw;
 }
 
-#home2 h1 {
+#home3 h1 {
   position: absolute;
   color: #fff;
   padding-left: 50vw;
-  margin-top: -20vh;
+  margin-top: -35vh;
   font-size: 2.3em;
 }
 
-.white-bottom {
+#home3 .light {
   position: absolute;
-  -webkit-transform: translate(-20vh, -35vh) skew(48deg, -5deg);
-          transform: translate(-20vh, -35vh) skew(48deg, -5deg);
-  width: 115vw;
-  z-index: -1;
+  height: 25vh;
+  width: 98.9vw;
+  bottom: 0;
+  left: 0;
 }
 /*# sourceMappingURL=styles.css.map */
