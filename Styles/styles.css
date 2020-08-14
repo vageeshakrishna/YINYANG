@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Shojumaru&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -107,6 +111,15 @@ header nav .nav-links {
           transform: rotate(520deg);
 }
 
+#home .cta {
+  position: absolute;
+  left: 15vw;
+  top: 80vh;
+  z-index: 1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 #home2 {
   position: relative;
   height: 20vh;
@@ -119,6 +132,7 @@ header nav .nav-links {
           transform: translateY(-30vh);
   height: 45vh;
   width: 98.9vw;
+  z-index: -1;
 }
 
 #home3 {
@@ -187,5 +201,12 @@ header nav .nav-links {
 #home3 .cta-btn:hover {
   z-index: 1;
   color: white;
+}
+
+#home3 .cta-up {
+  position: absolute;
+  bottom: 5vh;
+  right: 27vw;
+  z-index: 1;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -47,6 +51,8 @@ header {
   }
 }
 
+// White Section
+
 #home {
   height: 80vh;
   display: grid;
@@ -66,7 +72,16 @@ header {
       transform: rotate(520deg);
     }
   }
+  .cta {
+    position: absolute;
+    left: 15vw;
+    top: 80vh;
+    z-index: 1;
+    transform: rotate(180deg);
+  }
 }
+
+// Blank Home Section
 
 #home2 {
   position: relative;
@@ -77,8 +92,12 @@ header {
     transform: translateY(-30vh);
     height: 45vh;
     width: 98.9vw;
+    z-index: -1;
   }
 }
+
+// Black Section
+
 #home3 {
   position: relative;
   height: 100vh;
@@ -132,5 +151,11 @@ header {
       z-index: 1;
       color: white;
     }
+  }
+  .cta-up {
+    position: absolute;
+    bottom: 5vh;
+    right: 27vw;
+    z-index: 1;
   }
 }
