@@ -159,3 +159,72 @@ header {
     z-index: 1;
   }
 }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  #header {
+    .logo-img {
+      height: 5vh;
+    }
+  }
+  #home {
+    display: block;
+    .h1 {
+      font-size: 1.8rem;
+      position: absolute;
+      left: 27vw;
+      top: 15%;
+    }
+    .yang {
+      position: absolute;
+      grid-column: 2/3;
+      left: 33vw;
+      top: 20%;
+      height: 20vh;
+    }
+  }
+  .dark,
+  .light {
+    overflow: hidden;
+  }
+  .cta,
+  .cta-up {
+    display: none;
+  }
+
+  #home3 {
+    position: relative;
+    display: block;
+    #h1 {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      font-size: 1.8rem;
+      bottom: 45vh;
+      left: 27vw;
+    }
+    .yin {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      left: 33vw;
+      top: 20%;
+      height: 20vh;
+    }
+    .cta-btn {
+      margin: 0;
+      padding: 3vh 8vh;
+      bottom: 15vh;
+      left: 27vw;
+      position: absolute;
+      font-size: 1.4rem;
+    }
+    .light {
+      width: 100%;
+      bottom: 0;
+      transform: translateY(10vh);
+    }
+  }
+}
